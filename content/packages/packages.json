@@ -2,18 +2,18 @@
   "packages": [
     {
       "id": "1",
-      "name": "Basic Presence",
-      "description": "Cocok bismilla bisa",
+      "name": "Paket Landing Page",
+      "description": "Cocok untuk UKM, bisnis spesifik atau personal yang membutuhkan website simpel agar lebih professional.",
       "price": 700000,
       "isPopular": false,
       "features": [
         "1 Halaman",
-        "3 Section Utama",
-        "Cocok Untuk",
-        "Cocok Untuk",
-        "Cocok Untuk",
-        "Cocok Untuk",
-        "Cocok Untuk"
+        "4 Section Utama",
+        "Free Domain ( .my.id / .online )",
+        "Integrasi CMS",
+        "Free Maintenance 15 Hari",
+        "Panduan Penggunaan CMS",
+        "Revisi Ringan 2x"
       ],
       "category": "Business Package"
     },
