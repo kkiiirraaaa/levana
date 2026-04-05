@@ -8,14 +8,17 @@ import { getSettings } from '@/lib/content';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Levana Technology',
-  description: 'Agensi website personal branding terdedikasi untuk kreator dan solopreneur. Bangun kepercayaan bukan hanya atensi lewat personal branding website.',
-  keywords: 'personal branding, website design, web development, digital branding, solopreneur, kreator',
-  authors: [{ name: 'Levana Technology' }],
+  title: "Levana Technology",
+  description:
+    "A personal branding website agency dedicated to creators and solopreneurs.",
+  keywords:
+    "personal branding, website design, web development, digital branding, solopreneur, kreator",
+  authors: [{ name: "Levana Technology" }],
   openGraph: {
-    title: 'Levana Technology',
-    description: 'Bangun kepercayaan bukan hanya atensi lewat personal branding website.',
-    type: 'website',
+    title: "Levana Technology",
+    description:
+      "Build Trust Through Personal Branding Website for Your Business.",
+    type: "website",
   },
 };
 

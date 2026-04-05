@@ -22,7 +22,7 @@ Complete guide for deploying your website to production.
 ```bash
 # Make sure everything is committed
 git add .
-git commit -m "Ready for deployment"
+git commit -m "Ready for "
 git push origin main
 ```
 
