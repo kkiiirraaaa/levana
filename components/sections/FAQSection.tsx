@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import type { FAQ } from '@/types';
+import { useState, useEffect, useRef } from "react";
+import type { FAQ } from "@/types";
 
 interface FAQSectionProps {
   faqs: FAQ[];
@@ -9,6 +9,23 @@ interface FAQSectionProps {
 
 export default function FAQSection({ faqs }: FAQSectionProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const faqRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (faqRef.current && !faqRef.current.contains(event.target as Node)) {
+        setOpenIndex(null);
+      }
+    }
+
+    if (openIndex !== null) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [openIndex]);
 
   if (faqs.length === 0) return null;
 
@@ -17,10 +34,10 @@ export default function FAQSection({ faqs }: FAQSectionProps) {
   };
 
   return (
-    <section id="faq" className="py-20  bg-black">
+    <section id="faq" className="px-3 md:px-0 py-20 bg-dark">
       <div className="container-custom">
         <div className="text-center mb-12">
-          <span className="section-badge bg-black rounded-lg border border-primary text-center text-gray-200 mx-auto">
+          <span className="section-badge bg-dark rounded-lg border border-primary text-center text-gray-200 mx-auto">
             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
               <path
                 fillRule="evenodd"
@@ -31,21 +48,20 @@ export default function FAQSection({ faqs }: FAQSectionProps) {
             FAQ
           </span>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Pertanyaan yang Sering Diajukan
+            Frequently Asked Questions
           </h2>
           <p className="text-gray-300 max-w-5xl mx-auto">
-            Kami memahami bahwa setiap langkah besar dimulai dengan pertanyaan.
-            Temukan jawaban atas hal-hal yang paling sering ditanyakan oleh
-            klien kami di sini.
+            Every great journey begins with a question. Find the answers to our
+            clients' most common inquiries here.
           </p>
         </div>
 
-        <div className="max-w-7xl mx-auto">
-          <div className=" gap-4">
+        <div ref={faqRef} className="max-w-7xl mx-auto">
+          <div className="gap-4">
             {faqs.map((faq, index) => (
               <div
                 key={faq.id}
-                className="bg-black border border-dark-lighter rounded-xl mb-4 overflow-hidden hover:bg-dark-lighter transition-colors"
+                className="bg-dark border border-dark-lighter rounded-xl mb-4 overflow-hidden hover:bg-dark-lighter transition-colors"
               >
                 <button
                   onClick={() => toggleFAQ(index)}
@@ -63,7 +79,7 @@ export default function FAQSection({ faqs }: FAQSectionProps) {
                     />
                   </svg>
                   <div className="flex-1">
-                    <h3 className="font-semibold ">{faq.question}</h3>
+                    <h3 className="font-semibold">{faq.question}</h3>
                   </div>
                   <svg
                     className={`w-5 h-5 text-gray-300 flex-shrink-0 transition-transform ${

@@ -27,18 +27,50 @@ const defaultServices: Service[] = [
 
 const iconMap: Record<string, JSX.Element> = {
   globe: (
-    <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+    <svg
+      className="w-6 h-6"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+      />
     </svg>
   ),
+  // Gedung/kantor → cocok untuk "Business Website Strategic"
   users: (
-    <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+    <svg
+      className="w-6 h-6"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-2 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+      />
     </svg>
   ),
+  // Palet warna → cocok untuk "Brand & Visual Design"
   compass: (
-    <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9" />
+    <svg
+      className="w-6 h-6"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"
+      />
     </svg>
   ),
 };
@@ -47,7 +79,7 @@ export default function ServicesSection({ services }: ServicesSectionProps) {
   const displayServices = services.length > 0 ? services : defaultServices;
 
   return (
-    <section id="services" className="py-20 bg-dark">
+    <section id="services" className="px-3 md:px-0 py-20 bg-dark">
       <div className="container-custom">
         <div className="text-center mb-12">
           <span className="section-badge bg-dark rounded-lg border border-primary text-center text-gray-200 mx-auto">
@@ -75,7 +107,7 @@ export default function ServicesSection({ services }: ServicesSectionProps) {
           {displayServices.map((service) => (
             <div
               key={service.id}
-              className="bg-dark-lighter rounded-xl p-6 transition-all duration-300  hover:shadow-[13px_13px_10px_3px_rgba(99,102,241,0.4)]"
+              className="bg-dark-lighter rounded-xl p-6 transition-all duration-300  hover:shadow-[8px_8px_7px_0px_rgba(33,127,255,1)]"
             >
               {/* Icon bulat */}
               <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white mb-4">

@@ -2,33 +2,28 @@
   "faqs": [
     {
       "id": "1",
-      "question": "Apa fokus utama dari Levana Techology?",
-      "answer": "Levana Technology fokus pada pembuatan website personal branding yang membantu kreator dan solopreneur membangun kredibilitas dan kepercayaan digital."
+      "question": "How long does the website development process take?",
+      "answer": "It depends on the package you choose, but generally 2–4 weeks from the initial consultation to the website going live."
     },
     {
       "id": "2",
-      "question": "Berapa lama proses pembuatan website?",
-      "answer": "Tergantung paket yang dipilih, umumnya 2-4 minggu dari konsultasi awal hingga website live."
+      "question": "Can I update the content myself?",
+      "answer": "Yes! We provide an easy-to-use CMS so you can update content without any coding knowledge."
     },
     {
       "id": "3",
-      "question": "Apakah saya bisa update konten sendiri?",
-      "answer": "Ya, kami menyediakan CMS yang mudah digunakan sehingga Anda bisa update konten tanpa perlu coding."
+      "question": "Do you offer post-launch support?",
+      "answer": "Absolutely! We provide technical support and maintenance after launch to make sure your website keeps running smoothly."
     },
     {
       "id": "4",
-      "question": "Apakah ada support setelah website selesai?",
-      "answer": "Tentu! Kami menyediakan support teknis dan maintenance untuk memastikan website Anda berjalan optimal."
+      "question": "What sets Levana apart from other agencies?",
+      "answer": "We focus on strategic personal branding, not just pretty design. Every element is crafted to build trust and drive conversions."
     },
     {
       "id": "5",
-      "question": "Apa yang membedakan Levana dengan agency lain?",
-      "answer": "Kami fokus pada personal branding yang strategis, bukan hanya desain cantik. Setiap elemen dirancang untuk membangun kepercayaan dan konversi."
-    },
-    {
-      "id": "6",
-      "question": "Apakah website mobile-friendly?",
-      "answer": "Semua website yang kami buat sudah responsive dan dioptimasi untuk semua perangkat (desktop, tablet, mobile)."
+      "question": "Are the websites mobile-friendly?",
+      "answer": "Every website we build is fully responsive and optimized for all devices — desktop, tablet, and mobile."
     }
   ]
 }

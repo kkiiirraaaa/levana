@@ -20,7 +20,7 @@ export default function PackagesSection({ packages }: PackagesSectionProps) {
   if (packages.length === 0) return null;
 
   return (
-    <section id="packages" className="py-20 bg-dark">
+    <section id="packages" className="px-3 md:px-0 py-20 bg-dark">
       <div className="container-custom">
         <div className="text-center mb-12">
           <span className="section-badge bg-dark rounded-lg border border-primary text-center text-gray-200 mx-auto">
@@ -50,7 +50,7 @@ export default function PackagesSection({ packages }: PackagesSectionProps) {
               <button
                 key={cat}
                 onClick={() => setActiveTab(cat)}
-                className={`px-5 py-2 rounded-lg text-sm font-medium transition-all duration-200
+                className={`px-5 py-2 rounded-lg text-md font-medium transition-all duration-200
                   ${
                     activeTab === cat
                       ? "bg-primary text-white"
@@ -65,7 +65,7 @@ export default function PackagesSection({ packages }: PackagesSectionProps) {
 
         {/* Cards */}
         <div className="flex justify-center">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl w-full">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6  w-full">
             {filtered.map((pkg) => (
               <div
                 key={pkg.id}

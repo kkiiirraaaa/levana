@@ -1,50 +1,57 @@
-'use client';
+"use client";
 
-import HeroSection from '@/components/sections/HeroSection';
-import AboutSection from '@/components/sections/AboutSection';
-import ServicesSection from '@/components/sections/ServicesSection';
-import PackagesSection from '@/components/sections/PackagesSection';
-import TeamSection from '@/components/sections/TeamSection';
-import TestimonialsSection from '@/components/sections/TestimonialsSection';
-import FAQSection from '@/components/sections/FAQSection';
-import CTASection from '@/components/sections/CTASection';
-import WhatsAppForm from '@/components/sections/WhatsAppForm';
-import Link from 'next/link';
-import { useState } from 'react';
-import type { Settings } from '@/types';
-import Image from 'next/image';
+import Link from "next/link";
+import { useState, useEffect, useRef } from "react";
+import type { Settings } from "@/types";
+import Image from "next/image";
 
 interface NavbarProps {
   settings: Settings;
-}  
+}
 
 const navigation = [
-  { name: 'Home', href: '/#hero' },
-  { name: 'About Us', href: '/#about' },
-  { name: 'Services', href: '/#services' },
-  { name: 'Packages', href: '/#packages' },
-  { name: 'Our Team', href: '/#team' },
-  { name: 'Testimonials', href: '/#testimonials' },
-  { name: 'FAQ', href: '/#faq' },
+  { name: "Home", href: "/#hero" },
+  { name: "About Us", href: "/#about" },
+  { name: "Services", href: "/#services" },
+  { name: "Packages", href: "/#packages" },
+  { name: "Our Team", href: "/#team" },
+  { name: "Testimonials", href: "/#testimonials" },
+  { name: "FAQ", href: "/#faq" },
 ];
 
 export default function Navbar({ settings }: NavbarProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const navRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (navRef.current && !navRef.current.contains(event.target as Node)) {
+        setMobileMenuOpen(false);
+      }
+    }
+
+    if (mobileMenuOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [mobileMenuOpen]);
 
   return (
-    <nav className="sticky top-0 z-50 bg-dark">
+    <nav ref={navRef} className="sticky top-0 z-50 bg-dark">
       <div className="container-custom">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-              <Image
-                    src="/images/logo-levana.png"
-                    alt="Levana Logo"
-                    fill
-                    className="w-8 h-10 sm:w-10 sm:h-12 md:w-12 md:h-14"
-                    priority
-                  />
-          
+          <Link href="/" className="pt-1 gap-2">
+            <Image
+              src="/images/logo-levana.png"
+              alt="Levana Logo"
+              width={180}
+              height={180}
+              className="object-contain"
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -71,12 +78,32 @@ export default function Navbar({ settings }: NavbarProps) {
           >
             <span className="sr-only">Toggle menu</span>
             {mobileMenuOpen ? (
-              <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
               </svg>
             ) : (
-              <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
               </svg>
             )}
           </button>

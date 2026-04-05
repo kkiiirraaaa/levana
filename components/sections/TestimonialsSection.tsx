@@ -41,7 +41,10 @@ export default function TestimonialsSection({
   if (testimonials.length === 0) return null;
 
   return (
-    <section id="testimonials" className="py-20 bg-dark overflow-hidden">
+    <section
+      id="testimonials"
+      className="px-3 md:px-0 py-20 bg-dark overflow-hidden"
+    >
       <div className="container-custom">
         {/* Header */}
         <div className="text-center mb-12">
@@ -55,7 +58,8 @@ export default function TestimonialsSection({
             A Reputation Built on Results
           </h2>
           <p className="text-primary-light mx-auto">
-            Discover how our commitment to excellence has helped our clients achieve success.
+            Discover how our commitment to excellence has helped our clients
+            achieve success.
           </p>
         </div>
 
@@ -63,7 +67,7 @@ export default function TestimonialsSection({
         <div
           ref={scrollRef}
           onScroll={handleScroll}
-          className="flex gap-6 overflow-x-auto scroll-smooth pb-4"
+          className="flex gap-8 overflow-x-auto scroll-smooth pb-4"
           style={{
             scrollbarWidth: "none",
             msOverflowStyle: "none",
@@ -76,7 +80,7 @@ export default function TestimonialsSection({
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.id}
-              className="flex-shrink-0 w-[85vw] sm:w-[340px] md:w-[360px] bg-dark-lighter border border-dark-lighter rounded-xl p-6 hover:border-primary transition-colors duration-300"
+              className="flex-shrink-0 w-[85vw] sm:w-[340px] md:w-[380px] bg-dark-lighter rounded-xl p-6 shadow hover:shadow-[8px_8px_7px_0px_rgba(33,127,255,1)] transition-colors duration-300"
             >
               {/* Rating */}
               <div className="flex items-center gap-1 mb-4">

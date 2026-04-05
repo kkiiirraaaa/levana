@@ -22,7 +22,7 @@ export default function AboutSection({ about }: AboutSectionProps) {
   ];
 
   return (
-    <section id="about" className="py-20 bg-dark">
+    <section id="about" className="px-3 md:px-0 py-20 bg-dark">
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
@@ -36,14 +36,14 @@ export default function AboutSection({ about }: AboutSectionProps) {
               Levana <span className="text-primary-light ">Technology</span>
             </h1>
             <p className="text-primary-light mb-2">
-              Levana Technology is a digital agency that helps businesses and 
+              Levana Technology is a digital agency that helps businesses and
               SMEs establish a strong online presence through strategic and
               professionally crafted websites.
             </p>
             <p className="text-primary-light mb-8">
               By combining thoughtful design, clear structure, and modern web
-              technology, we ensure that every website we build becomes a 
-              valuable digital asset for your businesses.    
+              technology, we ensure that every website we build becomes a
+              valuable digital asset for your businesses.
             </p>
 
             {/* Stats */}
@@ -63,17 +63,18 @@ export default function AboutSection({ about }: AboutSectionProps) {
           </div>
 
           {/* Right Image */}
-<div className="relative flex justify-end">
-  <div className="relative w-64 h-84 md:w-80 md:h-80 rounded-2xl overflow-hidden border border-dark-lighter">
-    <Image
-      src="/images/levana.png"
-      alt="Levana pic"
-      fill
-      className="object-cover object-center"
-      priority
-    />
-  </div>
-</div>
+          {/* Right Image */}
+          <div className="relative w-full">
+            <div className="relative rounded-2xl w-full">
+              <Image
+                src="/images/levana.png"
+                alt="Levana pic"
+                width={319}
+                height={319}
+                className="w-full h-auto object-cover object-center rounded-2xl lg:w-[319px] lg:ml-auto"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>

@@ -6,17 +6,17 @@ interface CTASectionProps {
 
 export default function CTASection({ ctaText }: CTASectionProps) {
   return (
-    <section className="py-20 bg-primary">
+    <section className="px-3 md:px-0 py-20 bg-primary">
       <div className="container-custom">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-8">
-            Siap Tampilkan Nilai Terbaik Anda di Level Tertinggi?
+            Ready to Command the Highest Level of Your Value?
           </h2>
           <Link
-            href="/#contact"
-            className="inline-block bg-white text-black hover:bg-gray-100 font-medium px-8 py-4 rounded-lg transition-colors duration-200"
+            href="/#packages"
+            className="inline-block bg-primary-light text-dark hover:bg-dark hover:text-primary-light font-medium px-4 py-2 rounded-lg transition-colors duration-200"
           >
-            {ctaText}
+            Begin Your Journey
           </Link>
         </div>
       </div>
