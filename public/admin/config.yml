@@ -78,7 +78,28 @@ collections:
               - { label: "Description", name: "description", widget: "text" }
 
   # Packages
- 
+  - name: "packages"
+    label: "Packages"
+    files:
+      - name: "packages"
+        label: "Package List"
+        file: "content/packages/packages.json"
+        fields:
+          - label: "Packages"
+            name: "packages"
+            widget: "list"
+            fields:
+              - { label: "ID", name: "id", widget: "string" }
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Category", name: "category", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Price", name: "price", widget: "number" }
+              - { label: "Is Popular", name: "isPopular", widget: "boolean", default: false }
+              - label: "Features"
+                name: "features"
+                widget: "list"
+                fields:
+                  - { label: "Feature", name: "feature", widget: "string" }
 
   # Team
   - name: "team"
