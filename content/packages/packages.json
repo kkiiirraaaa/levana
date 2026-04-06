@@ -38,7 +38,7 @@
       "id": "3",
       "name": "Paket Payment Gateway",
       "category": "Business Package",
-      "description": "Paket Paymentq Gateway",
+      "description": "Paket Payment Gateway",
       "price": 3489000,
       "isPopular": false,
       "features": [
@@ -72,7 +72,6 @@
       "features": [
         "Paket Belum Tersedia."
       ]
-    }   
-  
+    }
   ]
 }
