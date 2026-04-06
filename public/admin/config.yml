@@ -98,8 +98,7 @@ collections:
               - label: "Features"
                 name: "features"
                 widget: "list"
-                fields:
-                  - { label: "Feature", name: "feature", widget: "string" }
+                field: { label: "Feature", name: "feature", widget: "string" }
 
   # Team
   - name: "team"

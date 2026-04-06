@@ -2,156 +2,77 @@
   "packages": [
     {
       "id": "1",
-      "name": "Basic Presence",
+      "name": "Paket Landing Page",
       "category": "Business Package",
-      "description": "Cocok Untuk Influencer atau personal yang membutuhkan website simpel agar lebih profesional",
+      "description": "Cocok untuk UKM, bisnis spesifik atau personal yang membutuhkan website simpel agar lebih profesional.",
       "price": 700000,
       "isPopular": false,
       "features": [
         "1 Halaman",
-        "3 Section Utama",
-        "Cocok Untuk",
-        "Cocok Untuk",
-        "Cocok Untuk",
-        "Cocok Untuk",
-        "Cocok Untuk"
+        "4 Section Utama",
+        "Free Domain ( .my.id / .online )",
+        "Interasi CMS",
+        "Free Maintenance 15 Hari",
+        "Panduan Penggunaan CMS",
+        "Revisi Ringan 2x"
       ]
     },
     {
       "id": "2",
-      "name": "Personal Branding Starter",
-      "category": "Personal Branding Package",
-      "description": "Cocok Untuk slebew kapn selesainya ini",
+      "name": "Company Profile",
+      "category": "Business Package",
+      "description": "Untuk bisnis yang ingin tampil lebih profesional  dan dipercaya oleh calon klien.",
       "price": 1500000,
       "isPopular": true,
       "features": [
-        "1 Halaman",
-        "5 Section Utama",
-        "Cocok Untuk",
-        "Cocok Untuk",
-        "Cocok Untuk",
-        "Cocok Untuk",
-        "Cocok Untuk"
+        "3 Halaman ( Home, About, Services )",
+        "Free Domain ( .com )",
+        "1 Email Bisnis",
+        "SEO Friendly",
+        "Desain Premium dan Clean",
+        "Revisi 3x",
+        "Free Maintenance 15 Hari"
       ]
     },
     {
       "id": "3",
-      "name": "Personal Branding Pro",
-      "category": "Personal Branding Package",
-      "description": "Cocok Untuk Lorem Ipsum Dorel Sit Amet",
+      "name": "Paket Payment Gateway",
+      "category": "Business Package",
+      "description": "Paket Paymentq Gateway",
       "price": 3489000,
       "isPopular": false,
       "features": [
-        "Cocok Untuk",
-        "Cocok Untuk",
-        "Cocok Untuk",
-        "Cocok Untuk",
-        "Cocok Untuk",
-        "Cocok Untuk",
-        "Cocok Untuk"
+        "Semua yang ada di Paket Company Profile",
+        "Free Domain ( .com / .id)",
+        "5 Halaman",
+        "3 Email Bisnis",
+        "Speed Optimization ( Lazy Load + Caching Tools )",
+        "Revisi Sepuasnya",
+        "Free Maintenance 30 Hari"
       ]
     },
     {
       "id": "4",
-      "name": "Autority / Premium",
+      "name": "Paket Belum Tersedia.",
       "category": "Visual & Design",
-      "description": "Cocok Untuk Lorem Ipsum Dorel Sit Amet",
-      "price": 5000000,
+      "description": "Paket Belum Tersedia.",
+      "price": 0,
       "isPopular": false,
       "features": [
-        "Cocok Untuk",
-        "Cocok Untuk",
-        "Cocok Untuk",
-        "Cocok Untuk",
-        "Cocok Untuk",
-        "Cocok Untuk",
-        "Cocok Untuk"
+        "Paket Belum Tersedia."
       ]
     },
     {
       "id": "5",
-      "name": "Basic Presence",
-      "category": "Business Package",
-      "description": "Cocok Untuk Influencer atau personal yang membutuhkan website simpel agar lebih profesional",
-      "price": 700000,
-      "isPopular": false,
-      "features": [
-        "1 Halaman",
-        "3 Section Utama",
-        "Cocok Untuk",
-        "Cocok Untuk",
-        "Cocok Untuk",
-        "Cocok Untuk",
-        "Cocok Untuk"
-      ]
-    },
-    {
-      "id": "6",
-      "name": "Personal Branding Starter",
+      "name": "Paket Belum Tersedia.",
       "category": "Personal Branding Package",
-      "description": "Cocok Untuk slebew kapn selesainya ini",
-      "price": 1500000,
-      "isPopular": true,
-      "features": [
-        "1 Halaman",
-        "5 Section Utama",
-        "Cocok Untuk",
-        "Cocok Untuk",
-        "Cocok Untuk",
-        "Cocok Untuk",
-        "Cocok Untuk"
-      ]
-    },
-    {
-      "id": "7",
-      "name": "Basic Presence",
-      "category": "Business Package",
-      "description": "Cocok Untuk Influencer atau personal yang membutuhkan website simpel agar lebih profesional",
-      "price": 700000,
+      "description": "Paket Belum Tersedia.",
+      "price": 0,
       "isPopular": false,
       "features": [
-        "1 Halaman",
-        "3 Section Utama",
-        "Cocok Untuk",
-        "Cocok Untuk",
-        "Cocok Untuk",
-        "Cocok Untuk",
-        "Cocok Untuk"
+        "Paket Belum Tersedia."
       ]
-    },
-    {
-      "id": "8",
-      "name": "Autority / Premium",
-      "category": "Visual & Design",
-      "description": "Cocok Untuk Lorem Ipsum Dorel Sit Amet",
-      "price": 5000000,
-      "isPopular": false,
-      "features": [
-        "Cocok Untuk",
-        "Cocok Untuk",
-        "Cocok Untuk",
-        "Cocok Untuk",
-        "Cocok Untuk",
-        "Cocok Untuk",
-        "Cocok Untuk"
-      ]
-    },
-      {
-        "id": "9",
-        "name": "Autority / Premium",
-        "category": "Visual & Design",
-        "description": "Cocok Untuk Lorem Ipsum Dorel Sit Amet",
-        "price": 5000000,
-        "isPopular": false,
-        "features": [
-          "Cocok Untuk",
-          "Cocok Untuk",
-          "Cocok Untuk",
-          "Cocok Untuk",
-          "Cocok Untuk",
-          "Cocok Untuk",
-          "Cocok Untuk"
-        ]
-      }
+    }   
+  
   ]
 }
